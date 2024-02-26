@@ -1,0 +1,147 @@
+:root {
+    --color_green: #04D361;
+    --color_blue: #899BFF;
+    --color_red: #FF3E3E;
+    --color_dark: #0C0C0C;
+    --color_dark_200: #212529;
+    --color_gray: #AEAEAE;
+    --color_light: #F9F9F9;
+    --color_bg: #1A1A1A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color_bg);
+    color: var(--color_light);
+    font-family: Inter, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    font-size: 32px;
+    color: var(--color_light);
+}
+
+.header__logo {
+    font-size: 20px;
+    color: var(--color_blue);
+}
+
+.btn {
+    width: 180px;
+    height: 50px;
+    border: 0;
+}
+.btn__buy {
+    background-color: transparent;
+    border: 2px solid var(--color_blue);
+    border-radius: 6px;
+    color: var(--color_light);
+    cursor: pointer;
+    transition: 0.35s;
+}
+.btn__buy:hover {
+    background-color: var(--color_blue);
+    border: none;
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__content {
+    width: 600px;
+    height: auto;
+}
+
+.section__content h2 {
+    font-family: Sora, sans-serif;
+    font-size: 45px;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.section__content h3 {
+    font-size: 30px;
+    font-weight: 400;
+    align-items: center;
+    color: var(--color_blue);
+    margin-top: 30px;
+}
+
+.section__content p {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color_gray);
+    margin-top: 20px;
+}
+
+form {
+    width: 600px;
+    height: auto;
+    margin-block: 40px;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input {
+    height: 50px;
+    background-color: var(--color_dark);
+    border: 1px solid var(--color_dark_200);
+    color: var(--color_light);
+    font-size: 20px;
+    padding: 1rem;
+}
+
+label {
+    font-size: 15px;
+    line-height: 25px;
+    padding-left: 2px;
+    color: var(--color_gray);
+}
+
+.btn__send {
+    width: 100%;
+    background-color: var(--color_blue);
+    color: var(--color_light);
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.35s;
+}
+.btn__send:hover {
+    opacity: 1;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
