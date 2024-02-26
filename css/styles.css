@@ -135,6 +135,7 @@ label {
 }
 .btn__send:hover {
     opacity: 1;
+    background-color: var(--color_green);
     font-weight: bold;
 }
 
@@ -144,4 +145,43 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Estilizando o Modal */
+.modal__send {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #0C0C0C50;
+}
+
+.modal__container {
+    width: 800px;
+    height: 300px;
+    background-color: var(--color_dark);
+    border: 1px solid var(--color_dark_200);
+    border-radius: 10px;
+    color: var(--color_light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.modal__container p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.modal__container .btn__closed {
+    width: 600px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 18px;
+    cursor: pointer;
 }
