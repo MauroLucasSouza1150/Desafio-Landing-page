@@ -130,11 +130,9 @@ label {
     color: var(--color_light);
     border-radius: 4px;
     cursor: pointer;
-    opacity: 0.8;
     transition: 0.35s;
 }
 .btn__send:hover {
-    opacity: 1;
     background-color: var(--color_green);
     font-weight: bold;
 }
@@ -178,10 +176,36 @@ footer {
 }
 
 .modal__container .btn__closed {
+    background-color: var(--color_blue);
+    color: var(--color_dark);
     width: 600px;
     font-size: 20px;
-    font-weight: bold;
     border-radius: 4px;
     margin-top: 18px;
     cursor: pointer;
+    transition: 0.35s;
+    opacity: 0.8;
+}
+.modal__container .btn__closed:hover {
+    opacity: 1;
+    font-weight: bold;
+}
+
+/* msg de sucesso e erro */
+.sucess {
+    color: var(--color_green);
+    font-size: 24px;
+}
+.failed {
+    font-size: 24px;
+    color: var(--color_red);
+}
+
+.erro {
+    padding-left: 3px;
+    color: var(--color_red);
+    font-size: 16px;
+}
+.erro__nome, .erro__email {
+    line-height: 20px;
 }
