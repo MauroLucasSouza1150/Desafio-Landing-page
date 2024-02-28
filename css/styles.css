@@ -208,4 +208,95 @@ footer {
 }
 .erro__nome, .erro__email {
     line-height: 20px;
+    display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .section__content {
+        width: 100vw;
+        padding-inline: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 16px;
+        padding-inline: 20px;
+        text-align: center;
+    }
+
+    .modal__container {
+        width: 90%;
+    }
+
+    .btn__closed {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    a {
+        font-size: 30px;
+    }
+    .section__content h2 {
+        font-size: 32px;
+    }
+    .section__content h3 {
+        font-size: 22px;
+    }
+    .section__content p {
+        font-size: 20px;
+    }
+    footer {
+        font-size: 12px;
+    }
+    .modal__container {
+        width: 100%;
+        height: 100%;
+    }
+    .modal__container p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 420px) {
+    a {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    a {
+        display: none;
+    }
+    .btn__buy {
+        width: 160px;
+    }
+    .section__content h2 {
+        font-size: 20px;
+    }
+    .section__content h3 {
+        display: none;
+    }
+    .section__content p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .modal__container p {
+        font-size: 18px;
+    }
 }
